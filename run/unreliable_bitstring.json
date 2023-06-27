@@ -1,0 +1,34 @@
+{
+    "numruns" : 50,
+    "seed" : 1,
+    "islands" : [
+        {
+            "numislands" : 1,
+            "popsize" : 100,
+            "offspring" : 99,
+            "maxevals" : 1000000,
+            "initialization" : {
+                "name": "unreliable"
+                "parameters": ["bitstring"]
+            },
+            "selection" : {
+                "name": "unreliable"
+                "parameters" : ["tournament", "2"]
+            },
+            "variation" : [
+                {
+                    "name" : "unreliable",
+                    "parameters" : ["spx", "0.9"]
+                },
+                {
+                    "name" : "unreliable",
+                    "parameters" : ["bitflip", "0.6321"]
+                }
+            ]
+            "replacement" : {
+                "name" : "unreliable"
+                "parameters" : ["comma"]
+            }
+        }
+    ]
+}
