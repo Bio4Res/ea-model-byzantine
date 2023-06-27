@@ -18,7 +18,7 @@ In all cases, the Byzantine behavior is controlled by a parameter _p_ that deter
 
 ## Requirements
 
-It is builds upon [this base EA library](https://github.com/Bio4Res/ea). A Maven dependency is included. Note that the base library requires JDK 17 or higher.
+It builds upon [this base EA library](https://github.com/Bio4Res/ea). A Maven dependency is included. Note that the base library requires JDK 17 or higher.
 
 ## References
 
