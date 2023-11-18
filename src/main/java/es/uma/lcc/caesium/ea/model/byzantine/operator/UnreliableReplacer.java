@@ -51,6 +51,12 @@ public class UnreliableReplacer extends ReplacementOperator {
 	}
 
 	@Override
+	public void newRun() {
+		super.newRun();
+		replacer.newRun();
+	}
+	
+	@Override
 	public String toString() {
 		return "Unreliable" + replacer;
 	}

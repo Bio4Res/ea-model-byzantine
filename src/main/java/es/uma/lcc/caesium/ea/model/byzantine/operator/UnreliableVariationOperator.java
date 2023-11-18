@@ -58,6 +58,13 @@ public class UnreliableVariationOperator extends VariationOperator {
 		return op.getArity();
 	}
 	
+	
+	@Override
+	public void newRun() {
+		super.newRun();
+		op.newRun();
+	}
+	
 	@Override
 	public String toString() {
 		return "Unreliable" + op;

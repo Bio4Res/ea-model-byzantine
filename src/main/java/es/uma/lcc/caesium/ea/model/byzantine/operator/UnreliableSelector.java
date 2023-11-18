@@ -45,6 +45,12 @@ public class UnreliableSelector extends SelectionOperator {
 		UnreliableUtil.swapFitness(selected);	
 		return selected;
 	}
+	
+	@Override
+	public void newRun() {
+		super.newRun();
+		selector.newRun();
+	}
 
 	@Override
 	public String toString() {
