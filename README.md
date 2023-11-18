@@ -11,14 +11,14 @@ Extension of a basic EA to objective functions that return unreliable fitness va
 * Randomizer: the objective function returns the true fitness of a previously evaluated solution (randomly selected).
 * Inverter: the objective function returns a value that represents the reflection of the true fitness of the solution being evaluated with respect to the maximum and minimum fitness values observes to the moment.
 
-The algorithm can be run in the presence of these failures without further adjustment, or be endowed with some mechanism to handle this issue. Two possibilities are included, in both cases based on redundant computation:
+In all cases, the Byzantine behavior is controlled by a parameter _p_ that determines the probabillity that an anomalous result is returned rather than the true fitness value. The algorithm can be run in the presence of these failures without further adjustment, or be endowed with some mechanism to handle this issue. Two possibilities are included, in both cases based on redundant computation:
 
 * Average: repeat the evaluation k times and take the average value
-* Majority: repeat the evaluaiton k times and take the most repeated value (or the average of most repeated values if there are several of them).
+* Majority: repeat the evaluation k times and take the most repeated value (or the average of most repeated values if there are several of them).
 
 ## Requirements
 
-It is builds upon [this base EA library](https://github.com/Bio4Res/ea). A Maven dependency is included. Note that the base library requires JDK 17 or higher.
+It builds upon [this base EA library](https://github.com/Bio4Res/ea). A Maven dependency is included. Note that the base library requires JDK 17 or higher.
 
 ## References
 
